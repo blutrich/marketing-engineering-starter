@@ -1,0 +1,10 @@
+{
+  "fixture": "FICTIONAL workshop sample. Every product fact and URL here is invented.",
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Fictional Fieldnote release note",
+      "text": "FICTIONAL WORKSHOP SOURCE: Fieldnote is an invented product for shared project checklists. Shared project checklists are available in this fictional release. Live collaboration is planned and is not available in this fictional release. Pricing has not been specified. The fictional feature overview URL is https://fieldnote.example.invalid/checklists."
+    }
+  ]
+}

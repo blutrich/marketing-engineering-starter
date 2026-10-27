@@ -1,0 +1,10 @@
+# Participant inputs and generated reports may contain private material.
+/runs/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Credentials are never required by the replay.
+.env
+.env.*
+!.env.example

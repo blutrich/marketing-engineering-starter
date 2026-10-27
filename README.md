@@ -26,6 +26,19 @@ cd marketing-engineering-starter && claude
 2. Ask for content. The router confirms a brief, the writer drafts, the guardian scores. You only see what passed.
 3. When you reject something the guardian passed, say why — the second occurrence becomes a rule. That loop is the whole system.
 
+## Hands-on feature-launch workshop
+
+For the runnable exercise, start with [the workshop guide](skills/feature-launch-workshop/README.md) or [the Hebrew guide](skills/feature-launch-workshop/START_HERE.md).
+
+The workshop takes supplied sources through a brief, draft, three reviews, and an explicit human decision. It includes a fictional mistake-and-correction demo, editable role prompts, a worksheet, and a local report. The runner uses Python 3.10+ with no dependencies, model calls, or publishing connectors; your existing assistant can help with the real drafting exercise.
+
+```sh
+cd skills/feature-launch-workshop
+python3 harness.py demo --out runs/demo
+```
+
+Open `runs/demo/report.html`. The demo uses saved fictional content and review results and stops before human approval. For the real exercise, open this workshop directory in your assistant and follow its local `AGENTS.md` and guide.
+
 ## Build order
 
 1. **Visibility** first — trust before autonomy
