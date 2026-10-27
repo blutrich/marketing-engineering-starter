@@ -1,0 +1,14 @@
+# Participant inputs and traces may contain private information.
+/data/local/
+/activity-log.md
+/output/
+/outputs/
+
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local examples need no credentials.
+.env
+.env.*
+!.env.example

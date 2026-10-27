@@ -1,15 +1,33 @@
-# Patterns
+# Selected patterns
 
-> The living memory. Agents read this at start, update it at end. This file is why week 10 beats week 1.
+No lessons have been selected yet. Empty memory is valid and does not block writing.
 
-## What works
+Record observed feedback before drawing a lesson. A review preference is not proof of audience performance. A measured result needs its actual source, period, and comparison; never invent metrics or claim causation from a single outcome.
 
-- (empty — your first winning post's hook pattern goes here, with the number that proved it)
+## What helped
 
-## What doesn't
+No entries yet.
 
-- (empty — every rejected draft's reason goes here; twice = promote to brand/rules.md)
+## What failed or needs care
 
-## Voice learnings
+No entries yet.
 
-- (empty — the exact phrases your audience uses that your writer should steal)
+## Voice observations
+
+No entries yet.
+
+## Approved rule changes
+
+No entries yet. A recurring issue is a reason to propose a change, not permission to modify `brand/rules.md` automatically.
+
+## Entry format
+
+For each participant-selected entry, record:
+
+- **Observation:** the actual feedback or measured result, without embellishment.
+- **Evidence:** a shareable reference and date; keep confidential source material in the local campaign.
+- **Applies to:** audience, channel, product/status, and any limits.
+- **Lesson:** the proposed action, distinguishing evidence from interpretation.
+- **Selected by / date:** the participant's explicit choice to retain this lesson.
+- **Rule change:** the specific approved change and rule ID, or "none".
+- **Review later:** when or under what condition to revisit or retire it.

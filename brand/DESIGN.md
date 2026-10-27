@@ -1,88 +1,36 @@
----
-# Design tokens — structured layer, per the DESIGN.md spec (github.com/google-labs-code/design.md)
-# Agents read these values verbatim; the prose below explains how to apply them.
-# Replace every CHANGE_ME. Lint when done: npx @google/design.md lint brand/DESIGN.md
-# Starter values so the file lints clean — swap every one for YOUR brand
-colors:
-  background: "#FAFAF8"   # your canvas — name it deliberately, don't default to white
-  ink: "#111111"          # primary text
-  primary: "#0055FF"      # THE accent. One vivid color, total. (swap me first)
-  muted: "#6B6B6B"        # secondary text / captions
-typography:
-  display: "CHANGE_ME    # display face — headlines only"
-  body: "CHANGE_ME       # body face — everything else"
-  fallback: "system-ui, sans-serif"
-spacing:
-  sm: "8px"
-  md: "16px"
-  lg: "32px"
-components:
-  cta-button:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.background}"
-    rounded: "8px"
-    padding: "{spacing.sm} {spacing.md}"
-  social-card:
-    backgroundColor: "{colors.background}"
-    textColor: "{colors.ink}"
-    typography: "{typography.display}"
-  caption:
-    textColor: "{colors.muted}"
-    typography: "{typography.body}"
----
+# Visual guide — {{BRAND_NAME}}
 
-# DESIGN.md — the visual canon
+Fill this optional guide before creating visuals. It is a plain Markdown specification: no renderer, font service or external lint tool is implied. Values must come from your approved brand references.
 
-> `voice-guide.md` is how the brand sounds; this file is how it looks. Format follows the
-> [DESIGN.md spec](https://github.com/google-labs-code/design.md): tokens in the YAML front matter
-> (exact values agents apply verbatim), prose below (the *why* and the rules of application).
-> Same principle as the whole repo: **on-brand by construction, not by review.**
+## Tokens
 
-## Overview
+| Token | Approved value | Use |
+|---|---|---|
+| background | {{COLOR_BACKGROUND}} | Main canvas |
+| text | {{COLOR_TEXT}} | Primary text |
+| accent | {{COLOR_ACCENT}} | Deliberate emphasis |
+| muted | {{COLOR_MUTED}} | Secondary information |
+| display font | {{FONT_DISPLAY}} | Headings |
+| body font | {{FONT_BODY}} | Paragraphs and labels |
+| fallback font | {{FONT_FALLBACK}} | Explicit fallback if approved fonts are unavailable |
+| spacing scale | {{SPACING_SCALE}} | Layout gaps and padding |
+| radius | {{CORNER_RADIUS}} | Corners where relevant |
 
-Everything that renders — social cards, ad templates, slide decks, landing pages — is built FROM the tokens above, never from a hex value someone remembers. A creative that isn't token-derived doesn't ship. Agents producing visuals read this file first (see `CLAUDE.md` startup sequence); the guardian scores creatives against the Do's and Don'ts below exactly as it scores copy against `rules.md`.
+## Composition and assets
 
-## Colors
+- Approved visual references and why they fit: {{VISUAL_REFERENCES}}
+- Logo file, rights, clear space and minimum size, or `no logo supplied`: {{LOGO_ASSET_RULES}}
+- Image sources, usage rights and credit requirements: {{IMAGE_ASSET_RULES}}
+- Layout, hierarchy and text-density guidance: {{LAYOUT_RULES}}
+- Motion, shadows and decorative effects: {{EFFECT_RULES}}
+- Supported languages and font/glyph exceptions: {{LANGUAGE_AND_GLYPH_RULES}}
 
-One background, one ink, ONE accent, one muted. The accent earns attention by being scarce — a second vivid color is a violation, not a variation. A near-miss hex (`#FF6B00` when the token says `#FF6A00`) is also a violation, not a rounding error: normalize and compare against the token, don't eyeball.
+## Visual review
 
-## Typography
+1. **V1 — Traceable choices.** Colors, type and spacing follow the filled tokens; record intentional exceptions.
+2. **V2 — Readable in context.** Inspect the actual export at the target screen or print size, including contrast, cropping and overflow. Do not treat a token file as proof of accessibility.
+3. **V3 — Assets used as authorized.** Use supplied logos and images under their stated permissions. Do not recreate a missing logo or claim a generated image is a real product screenshot.
+4. **V4 — Render checked.** Verify the output, fonts and relevant glyphs in the target format. Record the file reviewed and any fallback; a source file alone is not a visual check.
+5. **V5 — Claims match the copy.** Labels, charts and captions need the same evidence as prose.
 
-Display face for headlines, body face for everything else — no exceptions, no "it looked better in italic." Verify fonts actually LOADED in rendered output: render the same text with and without the font and compare pixels; if they match, you silently fell back and the creative fails.
-
-**Known glyph exceptions** — real fonts have real defects. Record them here the first time one bites you, so it becomes a rule instead of a repeated surprise:
-- [example: "the display face renders `$` badly — currency symbols always use the body face"]
-
-## Layout
-
-Flat, branded backgrounds — solid color fields from the tokens; never default gradients, never dark panels floated on color. Single visual surface: no boxes-within-boxes, no UI screenshot floating on a decorated card. Spacing comes from the spacing scale; if you need a value between `md` and `lg`, you probably don't.
-
-## Elevation & Depth
-
-[Define yours: shadows allowed? how many levels? Flat systems: state "no elevation — hierarchy comes from scale and color" and delete ambiguity.]
-
-## Shapes
-
-[Corner radius policy, e.g. "8px everywhere, pill-shape for CTAs only." One radius family; mixed radii read as unconsidered.]
-
-## Components
-
-The front matter defines the reusable pieces (`cta-button`, `social-card`) by referencing base tokens — change a base token and every component follows. Add a component the second time you build the same element by hand. Rendering them is deterministic work → a script, not a conversation: tokens + HTML template + headless-browser screenshot = the same on-brand card every time.
-
-## Do's and Don'ts
-
-**Do**
-- Resolve every color in a deliverable to a token — this is a color check, not a string grep
-- Place the logo from the real asset file, with its clearspace
-- Check legibility at feed/thumbnail size before calling a creative done
-- Run the lint (`npx @google/design.md lint`) after every token change — it catches broken references and WCAG contrast failures
-
-**Don't**
-- Let a model redraw, "clean up," or regenerate a logo — instant reject
-- Introduce a second accent, an off-token hex, or a default gradient
-- Trust that a webfont loaded — verify it
-- Ship a creative the guardian hasn't scored ≥ 9
-
-## The test
-
-Put your creative next to three real posts from your brand's feed. If a stranger can't tell which one the machine made, the tokens are doing their job.
+- Visual owner and date last checked: {{DESIGN_OWNER_AND_DATE}}

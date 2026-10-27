@@ -1,30 +1,30 @@
-# Brand Voice Guide — [YOUR BRAND]
+# Voice guide — {{BRAND_NAME}}
 
-> THE canonical voice file. Every agent reads this before writing a single word — that's structural, not optional.
-> Replace every [bracket] and delete these instructions when done. Keep it under one page: a voice guide nobody reads is social enforcement, and social enforcement loses.
+Replace every double-brace placeholder before using this file for real content. Use a short, concrete answer; write `not applicable` only when the field truly does not apply. This is a template, not an established brand.
 
-## Who we sound like
+## Voice in one sentence
 
-[One sentence: if your brand were a person at a dinner party, who are they? e.g. "The technical friend who explains without condescending."]
+{{VOICE_PERSONALITY}}
 
-## Three voice pillars
+## Three habits readers should hear
 
-1. **[Pillar, e.g. Direct]** — [one line on what this means in practice]
-2. **[Pillar, e.g. Warm]** — [one line]
-3. **[Pillar, e.g. Confident, never hyped]** — [one line]
+| Habit | How to write it | Before → after example |
+|---|---|---|
+| {{VOICE_HABIT_1}} | {{VOICE_HABIT_1_INSTRUCTION}} | {{VOICE_HABIT_1_EXAMPLE}} |
+| {{VOICE_HABIT_2}} | {{VOICE_HABIT_2_INSTRUCTION}} | {{VOICE_HABIT_2_EXAMPLE}} |
+| {{VOICE_HABIT_3}} | {{VOICE_HABIT_3_INSTRUCTION}} | {{VOICE_HABIT_3_EXAMPLE}} |
 
-## We say / we never say
+## Vocabulary
 
-| We say | We never say |
-|---|---|
-| [customers' word for themselves, e.g. "builders"] | ["users"] |
-| [your verb, e.g. "go live"] | ["deploy", "ship"] |
-| [plain claim with a number] | ["revolutionary", "game-changing"] |
+- Call the people we serve: {{AUDIENCE_TERM}}
+- Use these product terms exactly: {{PREFERRED_PRODUCT_TERMS}}
+- Avoid these phrases and explain why: {{AVOIDED_PHRASES_AND_REASON}}
+- Language, spelling and form of address: {{LANGUAGE_CONVENTIONS}}
+- Humor, emoji and sensitive-topic boundaries: {{TONE_BOUNDARIES}}
 
-## Audience
+## Reference and ownership
 
-[Who reads this content, what they struggle with today, and what they want to feel after reading. 3 lines max.]
+- One approved writing sample, its location and why it fits: {{APPROVED_VOICE_REFERENCE}}
+- Voice owner and date last checked: {{VOICE_OWNER_AND_DATE}}
 
-## The one test
-
-Before anything leaves: would [specific real customer or persona name] read this and think "they get me" — or "they're selling me"?
+Read [audience.md](audience.md) for the reader's situation and [rules.md](rules.md) for review criteria. A voice reference supplies style, not product facts.
