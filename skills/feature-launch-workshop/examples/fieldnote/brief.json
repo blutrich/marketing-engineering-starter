@@ -1,0 +1,42 @@
+{
+  "fixture": "FICTIONAL workshop brief. Not a statement about a real product.",
+  "audience": "Project leads coordinating a small team's work",
+  "objective": "Explain the fictional shared checklist release and invite readers to its example overview",
+  "angle": "A shared place to keep track of project checklist items",
+  "cta": "Read the fictional overview: https://fieldnote.example.invalid/checklists",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Shared project checklists are available in this fictional release.",
+      "availability": "available",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "quote": "Shared project checklists are available in this fictional release."
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "text": "Live collaboration is planned and is not available in this fictional release.",
+      "availability": "planned",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "quote": "Live collaboration is planned and is not available in this fictional release."
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "text": "Pricing has not been specified.",
+      "availability": "unknown",
+      "evidence": [
+        {
+          "source_id": "s1",
+          "quote": "Pricing has not been specified."
+        }
+      ]
+    }
+  ]
+}
